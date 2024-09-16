@@ -7,6 +7,10 @@
 
 #### * JOEL/BRIAN
 
+> #### Data Sets
+> * "All Released Movies: 1972-2016", https://www.imdb.com/list/ls057823854/
+> * "Domestic Yearly Box Office", https://www.boxofficemojo.com/year/?grossesOption=totalGrosses
+
 ### Related Work
 
 >One theory is that domestic studios have been catered more to the worldwide audience than the domestic (Wilkinson, 2017).  Wilkinson’s answer to the “why” is that the worldwide audience simply brings in more revenue.  For instance, she compared the domestic and foreign box office sales of the top twenty domestic movies worldwide as of September 2017.  All but one of the movies had more sales internationally than domestically and by large differences.
