@@ -5,6 +5,9 @@
 
 ### Proposed Project
 
+## Problem:
+* Many blockbuster movies from 70’s 80’s but a handful of terrible movies today.  Can data analysis prove that the quality of movies has gone down?
+
 Other criteria required in the project (3 out of 11):
 	1. Object oriented code - creating object with Movie data where cleaning, transformation, and analysis will be performed 
 	2. Intricate file management/manipulation (not just simply reading and writing of 1-2 files)
@@ -52,7 +55,7 @@ Using APIs in your project -using APIs![image](https://github.com/user-attachmen
 
 
 
-#### * JOEL/BRIAN
+#### * JOEL/BRIA
 
 > #### Data Sets
 > * "All Released Movies: 1972-2016", https://www.imdb.com/list/ls057823854/
