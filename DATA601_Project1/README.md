@@ -5,6 +5,53 @@
 
 ### Proposed Project
 
+Other criteria required in the project (3 out of 11):
+	1. Object oriented code - creating object with Movie data where cleaning, transformation, and analysis will be performed 
+	2. Intricate file management/manipulation (not just simply reading and writing of 1-2 files)
+		a. Combining data from multiple sources via APIs
+	3. Data cleaning and/or Data transformation
+	4. Numerical computation / Mathematical processing
+		a. Create binary or multilevel rating categories
+		b. Convert Gross Box Office income to US$ year 2000 for comparison
+			i. Normalize data if varies widely by decade
+		c. Create overall/combined rating
+			i. Evaluate rating centrality and spread
+			ii. Transform/normalize ratings to they can be combined without 1 system dominating
+	5. Regular Expression
+		a. If we incorporate directors, cast members or titles in our analysis, we may need to clean up different spellings
+	6. Intricate data gathering process (e.g through Web-scrapping)
+		a. Using APIs to gather data from different sources
+	7. Statistical analysis
+		a. Evaluate temporal trends by decade
+			i. Number of Movies
+				1) "Good" Movies
+				2) "Bad" movies
+			ii. Ratings
+				1) IMDB
+				2) Rotten Tomatoes
+				3) Metacritic
+			iii. Gross BO income
+			iv. Movie length
+				1) Long movies
+				2) Short movies
+			v. Sequels?
+			vi. Awards (Oscars in major categories)
+			vii. Genre
+			viii. Season of release
+	8. Linear Regression and variants (e.g ridge regression, lasso regression)
+		a. Ratings by decade, by year
+		b. Subset analysis
+			i. Genre
+			ii. Awards
+			iii. Box office
+	9. Logistic Regression and variants (e.g perceptron)
+		a. Dichotomize good vs. bad movies
+	10. Graphical User Interface
+Using APIs in your project -using APIs![image](https://github.com/user-attachments/assets/6215b806-61e2-43bf-bd18-14424a9d9c12)
+
+
+
+
 #### * JOEL/BRIAN
 
 > #### Data Sets
