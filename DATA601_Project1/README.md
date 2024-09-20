@@ -17,6 +17,8 @@
 
 # NEED TO CLEAN THE SECTION BELOW (WOULD BE GOOD FOR LAYING OUT HOW WE PLAN TO FULFILL CRITERIA)
 
+### Fulfilling Project Criteria:
+
 Other criteria required in the project (3 out of 11):
 	1. Object oriented code - creating object with Movie data where cleaning, transformation, and analysis will be performed 
 	2. Intricate file management/manipulation (not just simply reading and writing of 1-2 files)
