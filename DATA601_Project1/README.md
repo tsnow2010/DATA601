@@ -1,4 +1,4 @@
-# Title: Domestic Movie Analysis from 1972-2016
+# Title: Domestic Movie Analysis from 1972-2016<br>
 # DATA601: Project 1
 
 ## Introduction
