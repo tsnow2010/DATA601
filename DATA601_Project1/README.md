@@ -1,12 +1,21 @@
 # Title: Domestic Movie Analysis from 1972-2016
-## DATA601: Project 1
+# DATA601: Project 1
 
-### Introduction
+## Introduction
 
-### Proposed Project
+>* Not a few people believe that U.S. domestic movies have deteriorated in quality.  Original blockbusters like "The Godfather," "The Terminator," the Star Wars Episodes IV-VI, and more seem to be a thing of the past.  Studios and producers appear to be more interested in making animations, plot-absent, visually entertaining films, and neverending sequels than making truly original, creative films.
 
-## Problem:
-* Many blockbuster movies from 70’s 80’s but a handful of terrible movies today.  Can data analysis prove that the quality of movies has gone down?
+## Proposed Project
+
+### Problem:
+
+>* While many people may feel, by experience, that domestic cinema has deteriorated, comprehensive research and data analysis proving this claim lacks.  Put simply, the proposed research aims to answer the following: Have domestic films deteriorated in quality in the last five decades, or not? <br>
+>
+>* Suggested data analysis includes the following:<br>
+
+# JOEL/STATS INFO
+
+# NEED TO CLEAN THE SECTION BELOW (WOULD BE GOOD FOR LAYING OUT HOW WE PLAN TO FULFILL CRITERIA)
 
 Other criteria required in the project (3 out of 11):
 	1. Object oriented code - creating object with Movie data where cleaning, transformation, and analysis will be performed 
@@ -52,19 +61,13 @@ Other criteria required in the project (3 out of 11):
 	10. Graphical User Interface
 Using APIs in your project -using APIs![image](https://github.com/user-attachments/assets/6215b806-61e2-43bf-bd18-14424a9d9c12)
 
-
-
-
-#### * JOEL/BRIA
-
-> #### Data Sets
+> #### Available Data Sets
 > * "All Released Movies: 1972-2016", https://www.imdb.com/list/ls057823854/
 > * "Domestic Yearly Box Office", https://www.boxofficemojo.com/year/?grossesOption=totalGrosses
 
-### Related Work
+### Related Work, Previous Research and Opinions
 
-> Previous Research and Opinions
-> * One data scientist embarked on a similar research topic and found that the average ratings per movie have actually been increasing since the 2000’s (Millar-Corliss, 2018).  However, Millar-Corliss only analyzed IMDB ratings and commented that including Rotten Tomatoes and Metacritic may provide a more robust conclusion.  Additionally, he focused mainly on movies’ ratings and number of votes for his analysis.  For further insight on the subject, analyzing box office sales and gross revenue for movies against movie ratings would be insightful.
+> * One data scientist embarked on a similar research topic and found that the average ratings per movie have actually been increasing since the 2000’s (Millar-Corliss, 2018).  However, Millar-Corliss only analyzed IMDB ratings and commented that including Rotten Tomatoes and Metacritic may provide a more robust conclusion.  Additionally, he focused mainly on movies’ ratings and number of votes for his analysis.  He added that, for further insight on the subject, analyzing box office sales and gross revenue for movies against movie ratings would be insightful.
 > * One theory is that domestic studios have been catered more to the worldwide audience than the domestic (Wilkinson, 2017).  Wilkinson’s answer to the “why” is that the worldwide audience simply brings in more revenue.  For instance, she compared the domestic and foreign box office sales of the top twenty domestic movies worldwide as of September 2017.  All but one of the movies had more sales internationally than domestically and by large differences. 
 > * Film Courage interviewed Chris Gore, an outspoken film critic, and Gore also acknowledged the pressure of film studios to attract international viewers.  However, he also pointed out political pressures, poor studio executives, and a lack of originality in filmmaking as contributors to the problem (2021). <br>
 
