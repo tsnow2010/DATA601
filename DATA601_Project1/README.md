@@ -61,18 +61,20 @@ Other criteria required in the project (3 out of 11):
 	10. Graphical User Interface
 Using APIs in your project -using APIs![image](https://github.com/user-attachments/assets/6215b806-61e2-43bf-bd18-14424a9d9c12)
 
-> #### Available Data Sets
+### Available Data Sets
 > * "All Released Movies: 1972-2016", https://www.imdb.com/list/ls057823854/
 > * "Domestic Yearly Box Office", https://www.boxofficemojo.com/year/?grossesOption=totalGrosses
 
-### Related Work, Previous Research and Opinions
+## Related Work
 
-> * One data scientist embarked on a similar research topic and found that the average ratings per movie have actually been increasing since the 2000’s (Millar-Corliss, 2018).  However, Millar-Corliss only analyzed IMDB ratings and commented that including Rotten Tomatoes and Metacritic may provide a more robust conclusion.  Additionally, he focused mainly on movies’ ratings and number of votes for his analysis.  He added that, for further insight on the subject, analyzing box office sales and gross revenue for movies against movie ratings would be insightful.
-> * One theory is that domestic studios have been catered more to the worldwide audience than the domestic (Wilkinson, 2017).  Wilkinson’s answer to the “why” is that the worldwide audience simply brings in more revenue.  For instance, she compared the domestic and foreign box office sales of the top twenty domestic movies worldwide as of September 2017.  All but one of the movies had more sales internationally than domestically and by large differences. 
+### Previous Research and Opinions
+
+> * One data scientist embarked on a similar research topic.  His main conclusion was that the average ratings per movie have actually been increasing since the 2000’s (Millar-Corliss, 2018).  However, Millar-Corliss only analyzed IMDB ratings and commented that including Rotten Tomatoes and Metacritic may provide a more robust conclusion.  Additionally, he focused mainly on movies’ ratings and number of votes for his analysis.  He added that, for further insight on the subject, analyzing box office sales and gross revenue for movies against movie ratings would be insightful.
+> * As for those that believe our cinema has deteriorated, based only on experience, one has proposed a theory that domestic studios have begun to cater more to the international audience than the domestic (Wilkinson, 2017).  Wilkinson’s answer to the “why” is that the international audience, especially China, simply brings in more revenue.  For instance, she compared the domestic and foreign box office sales of the top twenty domestic movies worldwide as of September 2017.  All but one of the movies had more sales internationally than domestically and by large differences. 
 > * Film Courage interviewed Chris Gore, an outspoken film critic, and Gore also acknowledged the pressure of film studios to attract international viewers.  However, he also pointed out political pressures, poor studio executives, and a lack of originality in filmmaking as contributors to the problem (2021). <br>
 
-> Process of Calculating Ratings
-> * First, the ratings from the Internet Movie Database (IMDB), also on a point scale of 1 to 10, higher meaning a better score—are simple averages of all votes received.  Only IMDB users may vote, and only one vote is permitted per user.  Interestingly, a voter may also change their vote on a movie, and the previous vote will be overwritten (IMDB, 2023).<br>
+### Background on Rating Metrics
+> * First, ratings from the Internet Movie Database (IMDB), are on a point scale of 1 to 10, higher meaning a better score— and are simple averages of all votes received from IMDB members.  IMDB members can be anyone, but only one vote is permitted per user.  Interestingly, a voter may also change their vote on a movie, and the previous vote will be overwritten (IMDB, 2023).<br>
 
 > * Next, Metacritic states that its Metascore—a point scale of 0 to 100, higher meaning a better score—is calculated by taking the weighted average of select critic reviews and publications.  Depending on the source of the reviews, those reviews will get a higher or lower weight associated with them.  Additionally for movies, the weighted averages are normalized, or graded on a curve, in order to further emphasize exceptionally good or bad scores (Metacritic Support, 2023).<br>
 
