@@ -2,8 +2,8 @@
 # CAO 10/24/2024
 # By: Tyler Snow
 
-# This script defines Movie class and its functions to make requests to the OMDB API, located at 'http://www.omdbapi.com/?apikey=[yourkey]&', and writes data to a .csv to later analyze
-# ratings from IMDB, Rotten Tomatos, and Metacritic.
+# This script defines Movie class and its functions to make requests to the OMDB and TMDB APIs, located at 'http://www.omdbapi.com' and 'https://api.themoviedb.org', and writes data to a .csv to later analyze
+# ratings from IMDB, Rotten Tomatos, Metacritic, and TMDB.
 
 import requests
 import json
