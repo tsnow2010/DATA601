@@ -8,6 +8,7 @@
 import requests
 import json
 import csv
+import threading
 
 class Movie:
 
@@ -79,7 +80,10 @@ class Movie:
 
 
         # Turns requests into JSON format.
-        request_JSON1 = request1.json()
+        try:
+            request_JSON1 = request1.json()
+        except:
+            pass
         request_JSON2 = request2.json()
 
         # - Assigns attributes to instance
