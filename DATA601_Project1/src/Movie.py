@@ -68,7 +68,6 @@ class Movie:
             
             for row in reader:
                 writer.writerow([row[5],row[11]])
-                print('written', row[5],row[11])
             
         for file in files: 
             file.close()
