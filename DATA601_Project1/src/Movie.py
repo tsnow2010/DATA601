@@ -54,17 +54,26 @@ class Movie:
 
     # This function pulls titles and years from file, 'us_released_movies_1972_to_2016.csv',
     # and writes this data to movie_year_from_1972_2023.csv.
-    def get_titles_from_csv(file_name, write_file):
-        csv_file1 = open(file_name,'r',buffering=1)
-        reader = csv.reader(csv_file1, delimiter=',')
-        next(reader)
-        csv_file2 = open(write_file,'w')
-        writer = csv.writer(csv_file2,delimiter=',')
+    def get_titles_from_csv(file_names, write_file):
+        csv_file = open(write_file,'w')
+        writer = csv.writer(csv_file,delimiter=',')
         writer.writerow(['title','year'])
-        for row in reader:
-            writer.writerow([row[5],row[11]])
-        csv_file1.close()
-        csv_file2.close()
+
+        files = [open(file_name, 'r') for file_name in file_names]
+        
+        for file in files:
+            
+            reader = csv.reader(file, delimiter=',')
+            next(reader)
+            
+            for row in reader:
+                writer.writerow([row[5],row[11]])
+                print('written', row[5],row[11])
+            
+        for file in files: 
+            file.close()
+            
+        csv_file.close()
 
 # This function requests movie data from the OMDB for all movies made in a certain year.  It writes the results in 'movies_in_<year>.csv'.
 
@@ -87,19 +96,21 @@ class Movie:
             request2 = requests.get(OMDB_url, params={'t': self.title, 'y': self.year, 'r': 'json', 'type':'movie'})
 
         # Below Timer objects execute API requests after 5-second delay.
-        delay1 = threading.Timer(5,repeat_request1)
-        delay2 = threading.Timer(5,repeat_request2)
+        #delay1 = threading.Timer(5,repeat_request1)
+        #delay2 = threading.Timer(5,repeat_request2)
 
         # Turns requests into JSON format.  Exception handling allows requests to repeat after 5-second delay.      
         try:
             request_JSON1 = request1.json()
         except:
-            delay1.start()
+            #delay1.start()
+            print(f"Error occurred with request to OMDB regarding {self.title,self.year}.")
             
         try:    
             request_JSON2 = request2.json()
         except:
-            delay2.start()
+            #delay2.start()
+            print(f"Error occurred with request to TMDB regarding {self.title,self.year}.")
             
         # - Assigns attributes to instance
         # - Below exception handling prevents index errors from interrupting function.
