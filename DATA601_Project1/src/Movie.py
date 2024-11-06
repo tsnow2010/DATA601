@@ -9,6 +9,7 @@ import requests
 import json
 import csv
 import threading
+import re
 
 class Movie:
 
@@ -19,38 +20,42 @@ class Movie:
 
     # Pulls title and year from provided HTML files
     @staticmethod
-    def get_titles_from_html(file_name, write_file):
-        year = file_name[24:28]
-
-        # Pulls movie data from former HTML files obtained from Box Office Mojo using regex, and appends titles to movie_titles<list>
-        movie_titles = []
-        cleaned_movie_titles = []
-
-        # Open HTML file and use regex to pull movie titles and writes this data to movie_year_from_1972_2023.csv
-        with open (file_name,'r') as file:
-            for line in file:
-                # Removes lines with no movie titles
-                if (re.findall('_+[0-9]{1,3}.{2,60}</a{1}',line)) == []:
-                    continue
-                # Splits lists with multiple movie titles and appends to list
-                elif len(re.findall('_+[0-9]{1,3}.{2,60}</a{1}',line)) > 1:
-                    mult_movies = re.findall('_+[0-9]{1,3}.{2,60}</a{1}',line)
-                    while len(mult_movies) != 0:
-                        movie_titles.append([mult_movies.pop()])
-                # Appends all other movie titles to list
-                else:
-                    movie_titles.append(re.findall('_+[0-9]{1,3}.{2,60}</a{1}',line))
-
-        # Removes first item in list, as it's not wanted
-        movie_titles.pop(0)
-        # Cleans each title, removing unwanted marks
-        for movie in movie_titles:
-            cleaned_movie_titles.append(movie[0][:-3].split('"')[1][1:])
+    def get_titles_from_html(files, write_file):
 
         with open (write_file,'a') as file2:
-          writer = csv.writer(file2,delimiter=',')
-          for title in cleaned_movie_titles:
-            writer.writerow([title,year])
+            writer = csv.writer(file2,delimiter=',')
+
+            for file in files:
+                year = file[60:64]
+        
+                # Pulls movie data from former HTML files obtained from Box Office Mojo using regex, and appends titles to movie_titles<list>
+                movie_titles = []
+                cleaned_movie_titles = []
+        
+                # Open HTML file and use regex to pull movie titles and writes this data to movie_year_from_1972_2023.csv
+                with open (file,'r') as file1:
+                    for line in file1:
+                        # Skips lines with no movie titles
+                        if (re.findall('_+[0-9]{1,3}.{2,60}</a{1}',line)) == []:
+                            continue
+                        # Splits lists with multiple movie titles and appends to list
+                        elif len(re.findall('_+[0-9]{1,3}.{2,60}</a{1}',line)) > 1:
+                            mult_movies = re.findall('_+[0-9]{1,3}.{2,60}</a{1}',line)
+                            while len(mult_movies) != 0:
+                                movie_titles.append([mult_movies.pop()])
+                        # Appends all other movie titles to list
+                        else:
+                            movie_titles.append(re.findall('_+[0-9]{1,3}.{2,60}</a{1}',line))
+        
+                # Removes first item in list, as it's not wanted
+                movie_titles.pop(0)
+                
+                # Cleans each title, removing unwanted marks
+                for movie in movie_titles:
+                    cleaned_movie_titles.append(movie[0][:-3].split('"')[1][1:])
+                    
+                    for title in cleaned_movie_titles:
+                        writer.writerow([title,year])
 
     # This function pulls titles and years from file, 'us_released_movies_1972_to_2016.csv',
     # and writes this data to movie_year_from_1972_2023.csv.
@@ -151,6 +156,10 @@ class Movie:
         except:
           self.media = None # Is it a movie, show, mini-show, etc?
         try:
+          self.directors = request_JSON1["Director"]
+        except:
+          self.directors = None
+        try:
           self.origin = request_JSON1["Country"]
         except:
           self.origin = None
@@ -171,6 +180,7 @@ class Movie:
                           self.num_awards,
                           self.box_office,
                           self.media,
+                          self.directors,
                           self.origin]
                           )
         #print('This was written to', 'movie_ratings.csv' + ':', "'" + title, movie_ratings['imbd'], movie_ratings['rotten_tom'], movie_ratings['metascore'], str(movie_ratings['tmdb'])+ "'")
