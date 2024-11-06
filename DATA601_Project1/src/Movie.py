@@ -89,31 +89,16 @@ class Movie:
         # Request movie data from OMDB using title and year made, and return in JSON format.
         request1 = requests.get(OMDB_url, params={'t': self.title, 'y': self.year, 'r': 'json', 'type':'movie'})
         request2 = requests.get(TMDB_url, params={'query': self.title, 'year': self.year, 'api_key': '8179a3ac6c176723c5d4437365ec76e5'})
-        
-        # Below functions facilitate exception handing for requests to OMDB and TMDB APIs.
-        def repeat_request1():
-            global request1
-            request1 = requests.get(OMDB_url, params={'t': self.title, 'y': self.year, 'r': 'json', 'type':'movie'})
-            
-        def repeat_request2():
-            global request2
-            request2 = requests.get(OMDB_url, params={'t': self.title, 'y': self.year, 'r': 'json', 'type':'movie'})
-
-        # Below Timer objects execute API requests after 5-second delay.
-        #delay1 = threading.Timer(5,repeat_request1)
-        #delay2 = threading.Timer(5,repeat_request2)
 
         # Turns requests into JSON format.  Exception handling allows requests to repeat after 5-second delay.      
         try:
             request_JSON1 = request1.json()
         except:
-            #delay1.start()
             print(f"Error occurred with request to OMDB regarding {self.title,self.year}.")
             
         try:    
             request_JSON2 = request2.json()
         except:
-            #delay2.start()
             print(f"Error occurred with request to TMDB regarding {self.title,self.year}.")
             
         # - Assigns attributes to instance
@@ -183,7 +168,7 @@ class Movie:
                           self.directors,
                           self.origin]
                           )
-        #print('This was written to', 'movie_ratings.csv' + ':', "'" + title, movie_ratings['imbd'], movie_ratings['rotten_tom'], movie_ratings['metascore'], str(movie_ratings['tmdb'])+ "'")
+        print('This was written to movie_data.csv:', self.title, self.year)
 
         # Un-comment below to see the results from the API requests:
 
