@@ -10,6 +10,8 @@ import json
 import csv
 import threading
 import re
+from bs4 import BeautifulSoup
+
 
 class Movie:
 
@@ -78,7 +80,55 @@ class Movie:
             file.close()
             
         csv_file.close()
-
+        
+    # Takes movie titles from Wikipedia pages, https://en.wikipedia.org/wiki/List_of_American_films_of_{year}, and appends to .csv file.
+    def get_titles_from_webscraping(write_file):
+            
+        with open (write_file,'a') as file2:
+            writer = csv.writer(file2,delimiter=',')
+    
+            # Parses text from Wikipedia webpages listing all domestic movies made a specific year.
+            for year in range(1972,2024,1):
+                url = f'https://en.wikipedia.org/wiki/List_of_American_films_of_{year}'
+                response = requests.get(url)
+                soup = BeautifulSoup(response.text, 'html.parser')
+            
+                all_text = soup.get_text()
+                movie_set = set()
+    
+                # Finds titles starting with capital letter followed by lowercase letter.
+                movies = re.findall('\n{2}[A-Z][a-z].+\n[A-Z]',all_text)
+    
+                # Finds titles starting with 1-3 numbers, i.e. 12 Years a Slave, 300, etc.
+                movies2 = re.findall('\n{2}\d{1,3}.+\n[A-Z]',all_text)
+                movies += movies2
+    
+                # Cleans movie titles from lines taken from previous step and adds clean titles to movie_set.
+                for raw_movie in movies:
+                    raw_movie = raw_movie[0:-1]
+                    if '_' in raw_movie:
+                         continue
+                    elif ('(' in raw_movie) or (')' in raw_movie):
+                         continue
+                    elif '=' in raw_movie:
+                         continue
+                    elif ('[' in raw_movie) or (']' in raw_movie):
+                        continue
+                        
+                    movie = re.findall('(?<=\n\n).+', raw_movie)               
+                    movie_set.add(movie[0])
+                    
+                # Removes persistent non-titles in movie_set.
+                movie_set.discard('Privacy policy')
+                movie_set.discard('Rank')
+    
+                # Write movie titles with year to .csv file.
+                for movie in movie_set:
+                    writer.writerow([movie, year])
+                    
+                # Clear set for next iteration.
+                movie_set.clear()
+                    
 # This function requests movie data from the OMDB for all movies made in a certain year.  It writes the results in 'movies_in_<year>.csv'.
 
     def get_movie_data(self):
