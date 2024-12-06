@@ -8,16 +8,15 @@
 ## Proposed Project
 
 ## Documentation
-- main.ipynb
-  - Provides visualization of data compiled from APIs through comprehensive lists of movies.
-- src folder
-  - Movie.py: Provides OOP and API functionality for movie_collection.ipynb.
-  - movie_collection.ipynb:
+- _main.ipynb_: Provides visualization of data compiled from APIs through comprehensive lists of movies.
+- _src folder_
+  - _Movie.py_: Provides OOP and API functionality for movie_collection.ipynb.
+  - _movie_collection.ipynb_:
     - Provides steps to extract and compile movie titles and release years from various lists and puts into no_dups_movie_year_from_1972_2023.csv.
     - Using complete .csv file, it requests data on movies from OMDB and TMDB APIs.
-- data folder
-  - **no_dups_movie_year_from_1972_2023.csv**: Complete list of movie titles and release years to be used for API requests.
-  - movie_data.csv: Complete list of all movies titles and data compiled from APIs.
+- _data folder-
+  - _no_dups_movie_year_from_1972_2023.csv_: Complete list of movie titles and release years to be used for API requests.
+  - _movie_data.csv_: Complete list of all movies titles and data compiled from APIs.
   - Various HTML lists of movie titles and release years from IMDB for web-scraping.
 
 
