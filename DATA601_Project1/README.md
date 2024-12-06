@@ -1,5 +1,5 @@
 # Title: Domestic Movie Analysis from 1970-2023<br>
-# DATA601 Project
+# DATA 601 Project
 
 ## Introduction
 
@@ -19,15 +19,9 @@
   - _movie_data.csv_: Complete list of all movies titles and data compiled from APIs.
   - Various HTML lists of movie titles and release years from IMDB for web-scraping.
 
-
-
-
-
-
-### Available Data Sets
-> * Online Movie Database API at https://www.omdbapi.com/
-> * "All Released Movies: 1972-2016", https://www.imdb.com/list/ls057823854/
-> * "Domestic Yearly Box Office", https://www.boxofficemojo.com/year/?grossesOption=totalGrosses
+### APIs Used
+> * Online Movie Database (OMDB) at https://www.omdbapi.com/
+> * The Movie Database (TMDB) at https://developer.themoviedb.org/docs/getting-started
 
 ## Related Work
 
