@@ -1,5 +1,5 @@
-# Title: Domestic Movie Analysis from 1972-2016<br>
-# DATA601: Project 1
+# Title: Domestic Movie Analysis from 1970-2023<br>
+# DATA601 Project
 
 ## Introduction
 
@@ -12,6 +12,9 @@
   - Provides visualization of data compiled from APIs through comprehensive lists of movies.
 - src folder
   - Movie.py: Provides OOP and API functionality for movie_collection.ipynb.
+  - movie_collection.ipynb:
+    - Provides steps to extract and compile movie titles and release years from various lists and puts into no_dups_movie_year_from_1972_2023.csv.
+    - Using complete .csv file, it requests data on movies from OMDB and TMDB APIs.
 
 
 
