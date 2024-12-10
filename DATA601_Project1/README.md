@@ -1,5 +1,11 @@
 # Title: Domestic Movie Analysis from 1970-2023<br>
-# DATA 601 Project
+# DATA 601 Project<br>
+
+#### Authors: 
+>* Tyler Snow
+>* Brian Englum
+>* Joel Wheatley
+>* Manoj Kumar Pasupuleti
 
 ## Introduction
 
