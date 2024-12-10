@@ -28,50 +28,53 @@
 
 ### References
 
-1.  Why 99 Percent Of Movies Today Are Garbage — Chris Gore | by Film Courage write.film.create | Film Courage | Medium [Internet]. [cited 2024 Sep 21]. Available from: https://medium.com/film-courage/why-99-percent-of-movies-today-are-garbage-chris-gore-37b19ecb2602 
+1. Why 99 Percent Of Movies Today Are Garbage — Chris Gore | by Film Courage write.film.create | Film Courage | Medium [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://medium.com/film-courage/why-99-percent-of-movies-today-are-garbage-chris-gore-37b19ecb2602
 
-​2.	Are Movies Getting Better? : Planet Money : NPR [Internet]. [cited 2024 Sep 21]. Available from: https://www.npr.org/sections/money/2019/02/19/695758291/are-movies-getting-better 
+2. Are Movies Getting Better? : Planet Money : NPR [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://www.npr.org/sections/money/2019/02/19/695758291/are-movies-getting-better
 
-​3.	Why does Hollywood keep making the same movies, even when they flop? | Vox [Internet]. [cited 2024 Sep 21]. Available from: https://www.vox.com/culture/2017/9/7/16257426/box-office-global-domestic-china-mummy-furious-despicable-me-wolf-warrior 
+3. Why does Hollywood keep making the same movies, even when they flop? | Vox [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://www.vox.com/culture/2017/9/7/16257426/box-office-global-domestic-china-mummy-furious-despicable-me-wolf-warrior
 
-​4.	Are films getting better or worse? How do your favorite genres stack up? Do directors get better with experience? | by Kyle Millar-Corliss | Medium [Internet]. [cited 2024 Sep 21]. Available from: https://medium.com/@kylemcorliss/are-films-getting-better-or-worse-197ad9afbf6b 
+4. Are films getting better or worse? How do your favorite genres stack up? Do directors get better with experience? | by Kyle Millar-Corliss | Medium [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://medium.com/@kylemcorliss/are-films-getting-better-or-worse-197ad9afbf6b
 
-​5.	IMDb | Help [Internet]. [cited 2024 Sep 21]. Available from: https://help.imdb.com/article/imdb/track-movies-tv/ratings-faq/G67Y87TFYYP6TWAV?showReportContentLink=false# 
+5. IMDb | Help [Internet]. [cited 2024 Sep 21].<br>
+Available from: https://help.imdb.com/article/imdb/track-movies-tv/ratings-faq/G67Y87TFYYP6TWAV?showReportContentLink=false#
 
-​6.	About | Rotten Tomatoes [Internet]. [cited 2024 Sep 21]. Available from: https://www.rottentomatoes.com/about 
+6. About | Rotten Tomatoes [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://www.rottentomatoes.com/about
 
-​7.	How do you compute METASCORES? – Metacritic Support [Internet]. [cited 2024 Sep 21]. Available from: https://metacritichelp.zendesk.com/hc/en-us/articles/14478499933079-How-do-you-compute-METASCORES 
+7. How do you compute METASCORES? – Metacritic Support [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://metacritichelp.zendesk.com/hc/en-us/articles/14478499933079-How-do-you-compute-METASCORES
 
-​8.	Domestic Yearly Box Office - Box Office Mojo [Internet]. [cited 2024 Sep 21]. Available from: https://www.boxofficemojo.com/year/?grossesOption=totalGrosses 
+8. Domestic Yearly Box Office - Box Office Mojo [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://www.boxofficemojo.com/year/?grossesOption=totalGrosses 
 
-​9.	All U.S. Released Movies: 1970-2016 [Internet]. [cited 2024 Sep 21]. Available from: https://www.imdb.com/list/ls057823854/ 
+9. All U.S. Released Movies: 1970-2016 [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://www.imdb.com/list/ls057823854/ 
 
-​10.	OMDb API - The Open Movie Database [Internet]. [cited 2024 Sep 21]. Available from: https://www.omdbapi.com/ 
+10. OMDb API - The Open Movie Database [Internet]. [cited 2024 Sep 21]. <br>
+Available from: https://www.omdbapi.com/ 
 
-​11.        	About TMDB – The Movie Database (TMDB) [Internet]. [cited 2024 Oct 29]. Available from: 
+11. About TMDB – The Movie Database (TMDB) [Internet]. [cited 2024 Oct 29]. <br>
+Available from: ​https://www.themoviedb.org/about?language=en-USS 
 
-​https://www.themoviedb.org/about?language=en-USS 
+12. The Oscar Award, 1927 – 2024 [Internet]. [cited 2024 Dec 8].  <br>
+Available from: https://www.kaggle.com/datasets/unanimad/the-oscar-award
 
-​12.	             The Oscar Award, 1927 – 2024 [Internet]. [cited 2024 Dec 8]. Available from: 
+13. Streaming media | Definition, History, & Facts | Britannica. [cited 2024 Nov 11]. <br>
+Available from: https://www.britannica.com/technology/streaming-media 
 
-​              https://www.kaggle.com/datasets/unanimad/the-oscar-award 
+14. Rosy Introspection - The Decision Lab. [cited 2024 Dec 09]. <br>
+Available from: https://thedecisionlab.com/biases/rosy-retrospection 
 
-​13.                     Streaming media | Definition, History, & Facts | Britannica. [cited 2024 Nov 11]. Available 
+15. Bureau of Labor Statistics Data. [cited 2024 Dec 09]. <br>
+Available from: https://data.bls.gov/timeseries/CUUR0000SA0L1E?output_view=pct_12mths 
 
-​ from: https://www.britannica.com/technology/streaming-media 
+16. The Movies Dataset. [cited 2024 Dec 09].  <br>
+Available from: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?				                                                                resource=download&select=movies_metadata.csv 
 
-​14.                     Rosy Introspection - The Decision Lab. [cited 2024 Dec 09]. Available 
-
-​ 	from: https://thedecisionlab.com/biases/rosy-retrospection 
-
-​15.                     Bureau of Labor Statistics Data. [cited 2024 Dec 09]. Available 
-
-​ 	from: https://data.bls.gov/timeseries/CUUR0000SA0L1E?output_view=pct_12mths 
-
-​16.                     The Movies Dataset. [cited 2024 Dec 09]. Available 
-
-​ 	from: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?				                                                                resource=download&select=movies_metadata.csv 
-
-​17.                     Domestic Yearly Box Office | Box Office Mojo. [cited 2024 Dec 09]. Available 
-
-​ 	from: https://www.boxofficemojo.com/year/?ref_=bo_nb_hm_secondarytab 
+17. Domestic Yearly Box Office | Box Office Mojo. [cited 2024 Dec 09]. <br>
+Available from: https://www.boxofficemojo.com/year/?ref_=bo_nb_hm_secondarytab 
